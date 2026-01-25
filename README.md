@@ -1,87 +1,129 @@
-# Welcome to React Router!
+# ResumeIQ
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A production-grade AI resume analyzer that feels less like a repo and more like a product.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+**Live Demo:**  
+https://resumeiq-ai-resume-analyzer-x9rvr.puter.site/
 
-## Features
+ResumeIQ is an end-to-end, browser-native resume analysis platform. It allows users to upload resumes, evaluate them against real job context, and receive structured feedback, ATS scoring, and actionable improvement suggestions in real time.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+Everything runs client-side using modern frontend tooling and browser-based AI. No traditional backend is required.
 
 ---
 
-Built with ❤️ using React Router.
+## Screenshots
+
+### Landing & Onboarding
+
+<p align="center">
+  <img src="public/readme/sample.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="public/readme/WelcomePage.png" width="700" />
+</p>
+
+---
+
+### Resume Context & Upload Flow
+
+<p align="center">
+  <img src="public/readme/Upload-01.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="public/readme/Upload-02.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="public/readme/home.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="public/readme/HomePage.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="public/readme/HomePage1.png" width="700" />
+</p>
+
+---
+
+### Resume Processing
+
+<p align="center">
+  <img src="public/readme/Analyzing.png" width="700" />
+</p>
+
+---
+
+### Resume Review & Scoring
+
+<p align="center">
+  <img src="public/readme/review-01.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="public/readme/review-02.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="public/readme/review-03.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="public/readme/review-04.png" width="700" />
+</p>
+
+---
+
+### Session & Account State
+
+<p align="center">
+  <img src="public/readme/Logout.png" width="700" />
+</p>
+
+---
+
+## Features
+
+- Resume upload (PDF, DOCX, TXT)
+- Job-aware analysis using company name, role, and description
+- AI-generated scoring across:
+  - Tone & Style  
+  - Content quality  
+  - Structure  
+  - Skills coverage  
+- ATS compatibility scoring with concrete suggestions
+- Fully client-side processing
+- Responsive, production-grade UI
+
+---
+
+## System Architecture
+
+ResumeIQ is designed as a frontend-first system:
+
+- **UI:** React + TypeScript  
+- **Build Tool:** Vite  
+- **Routing:** React Router  
+- **AI & File Handling:** Browser-native APIs and Puter.js  
+- **Styling:** Utility-first CSS  
+- **Deployment:** Static hosting on Puter  
+
+All resume parsing, scoring, and AI interaction occurs in the browser. No external backend or database is required.
+
+---
+
+## Local Development
+
+### Prerequisites
+
+- Node.js 18+
+
+### Setup
+
+```bash
+git clone git@github.com:Shresth-yadav/ResumeIQ.git
+cd ResumeIQ
+npm install
